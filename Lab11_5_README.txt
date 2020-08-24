@@ -57,25 +57,17 @@ length
 replacement_cost
 rating
 
-[Include language ids & special features. Null columns not allowed in C#]
-language_id
-original_language_id
-special_features
+1917, War Drama by Director Sam Mendes, 2019, 3, 5.99, 179, 19.99, R
+JOKER, Oscar-Nominated SuperHero Drama, 2019, 3, 6.99, 182, 23.99, R
+STAR WARS: THE RISE OF SKYWALKER, Trash Disney Fan-fic, 2019, 3, 4.99, 202, 21.99m, PG-13
+TOY STORY 5, Toys come to life again, 2019, 3, 4.99, 180, 20.99, PG
+SUNSHINE, Evil can't hide in the light, 2019, 3, 2.99, 120, 16.99, R
 
-1917
-War Drama by Director Sam Mendes
-2019
-3
-5.99
-179
-19.99
-R
-7
-7
-Trailers
+[Must include language ids & special features in database records. Null columns not allowed in C#]
+language_id = 7
+original_language_id = 7
+special_features = Trailers
 
-
-(See PDF file for all data)
 
 4. Pull all of the data from the films table into C# into an array called allFilms. Use 
 the ToArray() method to do this. If you get an error here, double check that the Sakila Film 
