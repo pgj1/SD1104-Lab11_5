@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+
+namespace Lab11_5_Database_C_HTML
+{
+    class Film
+    {
+     [Key]
+     public int film_id { get; set; }
+     public string title { get; set; }
+     public string description { get; set; }
+     public string release_year { get; set; }
+     public byte rental_duration { get; set; }
+     public decimal rental_rate { get; set; }
+     public decimal replacement_cost { get; set; }
+     public string rating { get; set; }
+     public Int16 length { get; set; }
+     public DateTime last_update { get; set; }
+    public string special_features { get; set; }
+     public byte language_id { get; set; }
+     public byte original_language_id { get; set; }
+
+        public Film(string title, string description, string release_year, byte rental_duration, decimal rental_rate
+            , Int16 length, decimal replacement_cost, string rating)
+        {
+            this.title = title;
+            this.description = description;
+            this.release_year = release_year;
+            this.rental_duration = rental_duration;
+            this.rental_rate = rental_rate;
+            this.length = length;
+            this.replacement_cost = replacement_cost;
+            this.rating = rating;
+            this.last_update = DateTime.Now;
+            this.original_language_id = 7;
+            this.language_id = 7;
+            this.special_features = "Trailers";
+
+
+        }
+    }
+} 
